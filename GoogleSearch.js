@@ -35,4 +35,4 @@ function closeBrowser() {
 browser.get('https://www.google.com');
 browser.findElement(webdriver.By.name('q')).sendKeys('uefa site');
 browser.findElement(webdriver.By.name('btnG')).click();
-browser.wait(findUefaLink, 2000).then(clickLink).then(logTitle).then(closeBrowser, handleFailure);
+browser.wait(findUefaLink, 5000).then(clickLink).then(logTitle).then(closeBrowser, handleFailure);
