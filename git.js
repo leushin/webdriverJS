@@ -22,7 +22,7 @@ driver.get('https://github.com/pricing').then(() => {
                     driver.navigate().to('http://rubaxa.github.io/Sortable/').then(() => {
                         driver.sleep(2000);
                         let from = driver.findElement(By.css('#foo > li:first-of-type'));
-                        let to = driver.findElement(By.css('.logo'));
+                        let to = driver.findElement(By.css('#bar'));
                         driver.actions().dragAndDrop(from, to).perform();
                     });
                 });
